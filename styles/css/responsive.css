@@ -1,0 +1,87 @@
+@media screen and (max-width: 1600px) {
+  body > main {
+    margin-top: 3%;
+  }
+  body > main div#box1 div > a, body > main div#box1 h2, body > main div#box3 div > a, body > main div#box3 h2 {
+    margin-top: 40%;
+  }
+}
+@media screen and (max-width: 1600px) and (max-width: 1024px) {
+  body header > div {
+    max-width: 60%;
+  }
+  body main {
+    margin-top: 8%;
+  }
+  body main div#box2, body main div#box1, body main div#box3 {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1600px) and (max-width: 1024px) and (max-width: 900px) {
+  body {
+    grid-template-rows: 0.5fr 6fr 0.5fr;
+    grid-template-columns: 1fr;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  body main div#box2 {
+    width: 70%;
+    order: 1;
+  }
+  body main div#box1 {
+    order: 2;
+    margin-top: 10%;
+    width: 70%;
+  }
+  body main div#box1 div {
+    height: 100%;
+  }
+  body main div#box1 div a, body main div#box1 div h2 {
+    margin-top: 10%;
+  }
+  body main div#box3 {
+    order: 3;
+    width: 70%;
+    margin-top: 10%;
+  }
+  body main div#box3 div {
+    height: 100%;
+  }
+  body main div#box3 div a, body main div#box3 div h2 {
+    margin-top: 15%;
+  }
+  body main div#box3 div a {
+    margin-bottom: 0;
+  }
+  body main div#box3 div #first-p {
+    margin-top: 0;
+  }
+  body footer {
+    align-self: flex-end;
+    padding: 5% 0;
+  }
+  body footer div a > img {
+    width: 30%;
+  }
+  body footer div img#email {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 1600px) and (max-width: 1024px) and (max-width: 900px) and (max-width: 670px) {
+  body {
+    grid-template-rows: 1fr 11fr 1fr;
+  }
+  body header > div {
+    max-width: 90%;
+  }
+  body > footer > div h2, body > footer > div div > h2 {
+    font-size: 0.5rem;
+  }
+  body > footer > div img {
+    width: 30%;
+  }
+}/*# sourceMappingURL=responsive.css.map */

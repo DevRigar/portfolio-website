@@ -1,0 +1,98 @@
+
+
+
+@media screen and (max-width:1600px) { //Desktop Correction
+    body>main{
+            margin-top: 3%;
+            div#box1,div#box3{
+                div>a,h2{
+                        margin-top: 40%;
+                }
+            }
+        }   
+    @media screen and (max-width:1024px) { //Laptop
+        body{
+            header>div{
+                    max-width: 60%;
+            }
+            main{
+                margin-top: 8%;
+                div#box2,div#box1,div#box3{
+                    width: 30%;
+                }
+            }
+        }
+        @media screen and (max-width:900px) { //Laptop correction and tablet
+            body{
+                grid-template-rows: 0.5fr 6fr 0.5fr;
+                grid-template-columns: 1fr;
+                main{
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: center;
+                    align-items: center;
+                    div#box2{
+                        width: 70%;
+                        order: 1;                    
+                    }
+                    div#box1{
+                        order:2;
+                        margin-top: 10%;
+                        width: 70%;
+                        div{
+                            height: 100%;
+                            a,h2{
+                                margin-top: 10%;
+                            }
+                        }
+                    }
+                    div#box3{
+                        order:3;
+                        width: 70%;
+                        margin-top: 10%;
+                        div{
+                            height: 100%;
+                            a,h2{
+                                margin-top: 15%;
+                            }
+                            a{
+                                margin-bottom: 0;
+                            }
+                            #first-p{
+                                margin-top: 0;
+
+                            }
+                        }
+                    }
+                }
+                footer{
+                    align-self: flex-end;
+                    padding: 5% 0;
+                    div{
+                        a>img{
+                        width: 30%;
+                        }
+                        img#email{
+                            width: 10%;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width:670px){ //Smartphone,Tablet
+                body{
+                    grid-template-rows: 1fr 11fr 1fr;
+                    header>div{
+                        max-width: 90%;
+                    }
+                }
+                body>footer>div{
+                    h2,div>h2{font-size: 0.5rem;
+                    }
+                    img{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}

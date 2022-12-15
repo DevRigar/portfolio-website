@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Sigmar+One&display=swap");
+@media screen and (max-width: 1600px) {
+  body > main {
+    margin-top: 3%;
+  }
+  body > main div#box1 div > a, body > main div#box1 h2, body > main div#box3 div > a, body > main div#box3 h2 {
+    margin-top: 40%;
+  }
+}
+@media screen and (max-width: 1600px) and (max-width: 1024px) {
+  body header > div {
+    max-width: 60%;
+  }
+  body main {
+    margin-top: 8%;
+  }
+  body main div#box2, body main div#box1, body main div#box3 {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1600px) and (max-width: 1024px) and (max-width: 900px) {
+  body {
+    grid-template-rows: 0.5fr 6fr 0.5fr;
+    grid-template-columns: 1fr;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  body main div#box2 {
+    width: 70%;
+    order: 1;
+  }
+  body main div#box1 {
+    order: 2;
+    margin-top: 10%;
+    width: 70%;
+  }
+  body main div#box1 div {
+    height: 100%;
+  }
+  body main div#box1 div a, body main div#box1 div h2 {
+    margin-top: 10%;
+  }
+  body main div#box3 {
+    order: 3;
+    width: 70%;
+    margin-top: 10%;
+  }
+  body main div#box3 div {
+    height: 100%;
+  }
+  body main div#box3 div a, body main div#box3 div h2 {
+    margin-top: 15%;
+  }
+  body main div#box3 div a {
+    margin-bottom: 0;
+  }
+  body main div#box3 div #first-p {
+    margin-top: 0;
+  }
+  body footer {
+    align-self: flex-end;
+    padding: 5% 0;
+  }
+  body footer div a > img {
+    width: 30%;
+  }
+  body footer div img#email {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 1600px) and (max-width: 1024px) and (max-width: 900px) and (max-width: 670px) {
+  body {
+    grid-template-rows: 1fr 11fr 1fr;
+  }
+  body header > div {
+    max-width: 90%;
+  }
+  body > footer > div h2, body > footer > div div > h2 {
+    font-size: 0.5rem;
+  }
+  body > footer > div img {
+    width: 30%;
+  }
+}
+* {
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+body {
+  background-color: #CFE6E4;
+  display: grid;
+  grid-template-rows: 1fr 3fr 0.7fr;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+body header {
+  grid-area: header;
+  background-color: rgba(42, 143, 129, 0.7);
+  height: fit-content;
+}
+body header div {
+  margin: 0 auto;
+  max-width: 40%;
+  transform: translate(-2%, 0);
+}
+body header div img {
+  display: block;
+  transform: translate(0, 25.2%);
+}
+body main {
+  margin-top: 10%;
+  grid-area: main;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Sigmar One", cursive;
+}
+body main h1 {
+  font-size: 1.3rem;
+}
+body main div#box2 {
+  text-align: center;
+  width: 25%;
+}
+body main div#box2 h1 {
+  font-size: 2rem;
+}
+body main div#box2 h1.titles {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #D60A64;
+  font-size: 1.5rem;
+}
+body main div#box2 h2 {
+  margin-top: 10%;
+  font-size: 1.3rem;
+}
+body main div#box2 h2 span {
+  color: #D60A64;
+  font-size: 1.5rem;
+}
+body main div#box2 h2.academic {
+  text-align: left;
+  margin-top: 2%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+body main div#box2 div {
+  margin-top: 5%;
+  padding: 0 5% 5% 5%;
+  border-right: solid black;
+  border-left: solid black;
+  border-radius: 10px;
+}
+body main div#box2 div a {
+  text-decoration: none;
+}
+body main div#box2 div a.link {
+  color: #217066;
+  font-weight: 900;
+  display: inline;
+}
+body main div#box2 p {
+  margin-top: 10%;
+}
+body main div#box2 img {
+  margin-top: 20%;
+  width: 25%;
+}
+body main div#box3, body main div#box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+body main div#box3 h2, body main div#box1 h2 {
+  font-weight: 800;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  margin: 15% auto 0;
+}
+body main div#box3 p, body main div#box1 p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 7%;
+  font-size: 1.4rem;
+}
+body main div#box3 p.small, body main div#box1 p.small {
+  font-size: 1rem;
+}
+body main div#box3 div, body main div#box1 div {
+  text-align: center;
+  width: 100%;
+  height: 13%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+body main div#box3 div img.skills, body main div#box1 div img.skills {
+  display: block;
+  width: 18%;
+  margin: 5% auto;
+}
+body main div#box3 div img.bottom-image, body main div#box1 div img.bottom-image {
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  width: 20%;
+}
+body main div#box3 div img.top-image, body main div#box1 div img.top-image {
+  margin: auto;
+  margin-top: 5%;
+  width: 20%;
+  display: none;
+}
+body main div#box3 div a, body main div#box1 div a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  display: block;
+  margin: 10% auto;
+  width: 30%;
+}
+body main div#box3 div a.link, body main div#box1 div a.link {
+  color: #217066;
+  font-weight: 900;
+  display: inline;
+}
+body main div#box3 div span, body main div#box1 div span {
+  color: #D60A64;
+}
+body main div#box3 div:hover, body main div#box1 div:hover {
+  transition: 1s;
+  height: 100%;
+}
+body main div#box3 div:hover img.bottom-image, body main div#box1 div:hover img.bottom-image {
+  margin: auto;
+  margin-top: 5%;
+  width: 20%;
+  display: none;
+}
+body main div#box3 div:hover img.top-image, body main div#box1 div:hover img.top-image {
+  margin: auto;
+  margin-top: 5%;
+  width: 20%;
+  display: block;
+}
+body footer {
+  margin-top: 2%;
+  display: flex;
+  grid-area: footer;
+  background-color: rgba(42, 143, 129, 0.7);
+  justify-content: space-evenly;
+  align-items: center;
+}
+body footer div {
+  width: 25%;
+  text-align: center;
+}
+body footer div a {
+  text-decoration: none;
+  margin: 0 5% 0 5%;
+}
+body footer div img {
+  width: 17%;
+}
+body footer div img#email {
+  width: 7%;
+}
+body footer div div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body footer div div h2 {
+  align-self: center;
+}
+body footer h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1600px) {
+  body > main {
+    margin-top: 3%;
+  }
+  body > main div#box1 div > a, body > main div#box1 h2, body > main div#box3 div > a, body > main div#box3 h2 {
+    margin-top: 40%;
+  }
+}
+@media screen and (max-width: 1600px) and (max-width: 1024px) {
+  body header > div {
+    max-width: 60%;
+  }
+  body main {
+    margin-top: 8%;
+  }
+  body main div#box2, body main div#box1, body main div#box3 {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1600px) and (max-width: 1024px) and (max-width: 900px) {
+  body {
+    grid-template-rows: 0.5fr 6fr 0.5fr;
+    grid-template-columns: 1fr;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  body main div#box2 {
+    width: 70%;
+    order: 1;
+  }
+  body main div#box1 {
+    order: 2;
+    margin-top: 10%;
+    width: 70%;
+  }
+  body main div#box1 div {
+    height: 100%;
+  }
+  body main div#box1 div a, body main div#box1 div h2 {
+    margin-top: 10%;
+  }
+  body main div#box3 {
+    order: 3;
+    width: 70%;
+    margin-top: 10%;
+  }
+  body main div#box3 div {
+    height: 100%;
+  }
+  body main div#box3 div a, body main div#box3 div h2 {
+    margin-top: 15%;
+  }
+  body main div#box3 div a {
+    margin-bottom: 0;
+  }
+  body main div#box3 div #first-p {
+    margin-top: 0;
+  }
+  body footer {
+    align-self: flex-end;
+    padding: 5% 0;
+  }
+  body footer div a > img {
+    width: 30%;
+  }
+  body footer div img#email {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 1600px) and (max-width: 1024px) and (max-width: 900px) and (max-width: 670px) {
+  body {
+    grid-template-rows: 1fr 11fr 1fr;
+  }
+  body header > div {
+    max-width: 90%;
+  }
+  body > footer > div h2, body > footer > div div > h2 {
+    font-size: 0.5rem;
+  }
+  body > footer > div img {
+    width: 30%;
+  }
+}/*# sourceMappingURL=styles.css.map */
